@@ -31,6 +31,7 @@ public class BaseClass {
                 driver = new FirefoxDriver();
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
                 driver.manage().window().maximize();
+                break;
             default:
                 driver = null;
                 System.out.println("Please provide a valid browser type !!!!");
